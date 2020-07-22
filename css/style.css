@@ -1,0 +1,217 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 'Noto Sans TC', sans-serif;;
+}
+
+h1 {  
+  font-size: 4em; /* 90px/16px  */
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 3.3125em; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.1;
+  text-align: center;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #48525c;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+ul,
+ol {
+  margin: 30px 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(255, 169, 73);
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffa949;
+}
+
+a:hover {
+  color: rgba(255, 169, 73, 0.5);
+}
+
+a:active {
+  color: lightcoral;
+}
+
+/* Main Styles --------------------- */
+
+.main-header {
+  padding-top: 170px;
+  height: 1000px;
+  background: #ffa949 url("../img/header.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  font-size: 1.7em; /* 26px/16px */
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;  
+}
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center;
+}
+
+.primary-content {
+	padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.secondary-content {
+	padding-top: 50px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #ffa949;
+}
+
+.t-border {
+  border-top: 2px solid #dfe2e6;
+}
+
+li{
+  list-style-position: inside;
+  padding-left: 3em;
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content, 
+.secondary-content,
+.black-box,  
+.skills {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.front-end, 
+.ver-control, 
+.framework{
+  margin: 2em 0;
+  font-size: 1.4em;
+}
+
+.seminar,
+.band {
+  margin-top: 3em;
+}
+
+.wildlife {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid #ffa949;
+  margin: 60px 0 100px;
+  background: #434a52 url('../img/redark.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.arrow {
+  width: 50px;
+}
+
+.selfy {
+  border-radius: 50%;
+}
+
+.bigger {
+  font-size: 2.3em;
+}
+
+.rebigger {
+  font-size: 2.3em;
+  margin-top: 1.5em;
+}
+.small-title{
+  font-size: 2.3em;
+  margin-top: 1.5em;
+}
+
+.bigger-intro {
+  font-size: 1.3em;
+}
+
+/* Floated Columns ------------------ */
+
+.front-end, 
+.ver-control, 
+.framework{
+  width: 33.3%;
+  float: left;
+}
+
+.seminar,
+.band {
+  width: 46.5%;
+}
+
+.seminar {
+  float: left;
+}
+
+.band {
+  float: right;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
