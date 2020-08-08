@@ -3,77 +3,89 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>90249's Resume</title>
+    <title>Gary's Resume</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d135cb0619.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
   </head>
-  <body>  
+  <body>   
     <header id="top" class="main-header">　<!-- Header -->
-      <span class="title">為了找工作而出現的網站</span>
-      <h1>Hi 我是祐誠, 一位前端工程師</h1>
-      <img class="arrow" src="img/arrow.svg" alt="Down arrow">
+      <div class="slogan">
+        <p>
+          Hello, I'm <span>Gary</span>.<br>I'm a front-end developer.<br>
+        </p>
+        <a href="#myNav"><img class="arrow" src="img/arrow.svg" alt="Down arrow"></a>
+      </div>
     </header>
-    
-    <div class="primary-content t-border"> <!-- First content -->
-      <img class="selfy" src="img/selfy.jpg" alt="selfy">
+
+    <div class="nav group" id="myNav"> <!-- Nav bar -->
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#college">College</a></li>
+      </ul>
+    </div>
+
+    <div class="primary-content t-border" id="home"> <!-- First content -->
+      <img class="selfie" src="img/selfie.jpg" alt="selfy">
       <h3 class="bigger">Who's this guy?</h3>
 			<p class="intro">
-				來自新竹的工程師，以提供直覺的使用者體驗為目標，並創造出現代、簡約且動態的網站。
-			</p>      
+				I'm a Front-End Developer in Hsinchu.
+        I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+      </p>      
     </div>
     
-    <div class="skills t-border group"> <!-- Second content -->
+    <div class="skills t-border group" id="skills"> <!-- Second content -->
       <h3 class="small-title">Skills</h3>
       <div class="front-end">
-        <h3>前端</h3>
+        <h3>Front-end</h3>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
         </ul>
       </div>
-      <div class="ver-control">
-        <h3>版控</h3>
-        <ul>
-          <li>Git</li>
-        </ul>
-      </div>
       <div class="framework">
-        <h3>框架</h3>
+        <h3>Framework</h3>
         <ul>
           <li>Vue</li>
         </ul>
       </div>
-    </div>
-
-    <div class="black-box t-border">
-      <h3 class="rebigger">Introduction</h3>
-      <div class="box">
-        <h2>關於我</h2>
-          <p class="bigger-intro"> 
-            高中時進入電機科碰了很多硬體相關的東西後來發現軟體才是心之所向，
-            大學毅然地選擇了資工系，對設計和排版抱有熱誠，樂於與團隊溝通並貢獻，
-            喜歡研究網站新技術:Vue、UIUX 設計、RWD切版、串接Api。 
-          </p> 
+      <div class="ver-control">
+        <h3>Others</h3>
+        <ul>
+          <li>Git</li>
+        </ul>
       </div>
     </div>
 
-    <div class="secondary-content t-border group"> <!-- Third content -->
-      <h3 class="bigger">About College</h3>
+    <div class="black-box t-border" id="background">
+      <h3 class="rebigger">Background</h3>
+      <div class="box round">
+        <p class="bigger-intro">
+          My name is Gary. I hold a bachelor’s degree with a major in Computer Science and Information Engineering which was awarded to me by <a href="https://www.nutc.edu.tw/bin/home.php">國立台中科技大學</a> . <br>Besides my major, I have also taken many course related to design like Layout & Composition, Chromatics and Typography which have prepared me for flat design in the field of front-end develope. <br>
+          I am confirmed that I am ready for this position. Along with these experience, I hope to develop myself to keep pace with the changes of the era in my profession.
+        </p>
+      </div>
+    </div>
+
+    <div class="secondary-content t-border group" id="college"> <!-- Third content -->
+      <h3 class="college">College</h3>
       <div class="seminar">
-        <img src="img/card.jpg" alt="Resort">
-        <h3>專題實習</h3>
+        <img class="round" src="img/card.jpg" alt="Resort">
+        <h3>Work Experience</h3>
         <p>
-          大三開始在<a href="https://www.iscom.com.tw/">采威國際</a>實習直到大四上，
-          那時公司正承接公司中台灣好玩卡的設計，我學習到了排版和圖片爬蟲的經驗。
+          When I was a junior, my professor introduced me an internship  at <a href="https://www.iscom.com.tw/">采威</a> company. The main business of company is UI/UX design. I was in charge of the project called <a href="https://centraltw.funcard.com.tw/">中台灣好玩卡</a>. During that time i had learend and increased lots of front-end skills like layout design, fetch API, RWD... And I believed the exeperience and skills can bring value to your company.
         </p>	
       </div>
       <div class="band">
-        <img src="img/guitar.jpg" alt="Mountain Landscape">
-        <h3>大學生活</h3>
+        <img class="round" src="img/guitar.jpg" alt="Mountain Landscape">
+        <h3>Club</h3>
         <p>
-          大學時參加了吉他社，首次接觸到獨立樂團對我的音樂品味產生了巨大的影響;
-          那時舉辦過大大小小的活動和成發，對團體活動有熱誠且樂於溝通。
+          I joined the guitar club in college and that was my first time to contact <a href="https://streetvoice.com/music/charts/24hr/">independent music</a>. The underground bands have influenced my taste of music badly. We held a lot of events and presentations. I have passion for group activity and willing to communicate with others. 
         </p>
       </div>
     </div>
@@ -83,7 +95,7 @@
     </div>
 
     <footer class="main-footer"> <!-- Footer -->
-      <p>Copyright &copy; 2020 祐誠 All rights reserved</p>
+      <p>Copyright &copy; 2020 Gary</p>
 			<a href="#top">Back to top &raquo;</a>
 		</footer>
   </body>
